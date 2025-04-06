@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="login-body">
+<div class="login-container">
+    <h1>User Dashboard</h1>
+    <p class="welcome-message">Welcome, <span th:text="${username}"></span>! Your personal space.</p>    <form th:action="@{/logout}" method="post">
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+        <button type="submit" class="login-button">Logout</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+2025-04-03 04:40:52.237316+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "SELECT * FROM BAYA_USER USERS [*]USER_ROLES"
+Syntax error in SQL statement "SELECT * FROM BAYA_USER USERS [*]USER_ROLES"; SQL statement:
+SELECT * FROM BAYA_USER USERS USER_ROLES [42000-224]
+2025-04-03 04:41:38.722779+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "SELECT * [*]BAYA_USER"
+Syntax error in SQL statement "SELECT * [*]BAYA_USER"; SQL statement:
+SELECT * BAYA_USER [42000-224]
+2025-04-03 20:42:31.657025+02:00 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "[*]delet \000d\000a* FROM USERS"; attendu "DELETE, DROP"
+Syntax error in SQL statement "[*]delet \000d\000a* FROM USERS"; expected "DELETE, DROP"; SQL statement:
+delet 
+* FROM USERS [42001-224]
+2025-04-03 20:43:44.286457+02:00 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "delete [*]* FROM USERS"; attendu "identifier"
+Syntax error in SQL statement "delete [*]* FROM USERS"; expected "identifier"; SQL statement:
+delete * FROM USERS [42001-224]
+2025-04-03 20:49:02.540999+02:00 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "delete [*]all from USERS"; attendu "identifier"
+Syntax error in SQL statement "delete [*]all from USERS"; expected "identifier"; SQL statement:
+delete all from USERS [42001-224]
